@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test verbose="2" preserve-order="true"
+          name="/Users/kumarvaduganathan/Documents/WorkspaceSuhanya/seleniumframework/src/test/java/Infosys/pageobject/Standalonetest.java">
+        <groups>
+            <run>
+                <include name="Errorhandling"/>
+            </run>
+        </groups>
+    <classes>
+        <class name="Infosys.Infosys.Errorvalidation">
+            <methods>
+                <include name="loginerrorvalidation"/>
+                <include name="productcatlogerrorvalidation"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+
+
+</suite>

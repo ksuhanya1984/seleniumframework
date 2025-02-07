@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <groups>
+        <run>
+            <include name="purchase"/>
+        </run>
+    </groups>
+
+    <test verbose="2" preserve-order="true"
+          name="/Users/kumarvaduganathan/Documents/WorkspaceSuhanya/seleniumframework/src/test/java/Infosys/pageobject/Standalonetest.java">
+    <classes>
+        <class name="Infosys.test.Standalonetest">
+            <methods>
+                <include name="StandalonT"/>
+                <include name="OrderHistory"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+
+
+</suite>

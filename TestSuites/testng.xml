@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite parallel="tests" name="All suite">
+    <listeners>
+        <listener class-name="Infosys.Testcomponants.Listeners">
+
+        </listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="/Users/kumarvaduganathan/Documents/WorkspaceSuhanya/seleniumframework/src/test/java/Infosys/pageobject/Standalonetest.java">
+    <classes>
+        <class name="Infosys.test.Standalonetest">
+            <methods>
+                <include name="StandalonT"/>
+                <include name="OrderHistory"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Errorvalidation test">
+        <classes>
+            <class name="Infosys.Infosys.Errorvalidation">
+                <methods>
+                    <include name="loginerrorvalidation"/>
+                    <include name="productcatlogerrorvalidation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
