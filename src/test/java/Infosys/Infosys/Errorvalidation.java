@@ -18,7 +18,7 @@ public class Errorvalidation extends BaseTest {
         //flyInOut
         //Incorrect email id and password
         //Assert.assertEquals("Incorrect email or password",Landingpage.getmetheerrormessage());
-        Assert.assertEquals("Incorrect email  password.",Landingpage.getmetheerrormessage());
+        Assert.assertEquals("Incorrect email or password.",Landingpage.getmetheerrormessage());
 
     }
     @Test
