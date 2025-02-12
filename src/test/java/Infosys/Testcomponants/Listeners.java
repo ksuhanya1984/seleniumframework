@@ -15,7 +15,9 @@ public class Listeners extends BaseTest implements ITestListener {
 
     ExtentReports extent=ExtentReporterng.getReportobject();
     ExtentTest test;
-    ThreadLocal<ExtentTest> extentest=new ThreadLocal<ExtentTest>();
+    ThreadLocal<ExtentTest> extentest=new ThreadLocal<ExtentTest>();//using this to
+    // avoid concerent issue that is the reasion we are using this
+    // thread loacal to create unique id for each teast
 
     @Override
     public void onTestStart(ITestResult result) {

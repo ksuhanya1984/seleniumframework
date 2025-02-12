@@ -30,21 +30,24 @@ public class BaseTest {
         Properties prop = new Properties();
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//Infosys//resorces//GlobleData.properties");
         prop.load(fis);
-                          // this condition                      //this first argument           //Second arugument
-        //String browsername=System.getProperty("broser") !=null ? System.getProperty("browser") : prop.getProperty("browser");
-        String browsername = prop.getProperty("browser");
+        // this condition                      //this first argument           //Second arugument
+        String browsername = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
+        //String browsername = prop.getProperty("browser");
         if (browsername.equalsIgnoreCase("Chrome")) {
 
             driver = new ChromeDriver();
 
-        } /*else if (browsername.equalsIgnoreCase("firefox")) {
-            driver =new FirefoxDriver();
+        } else if (browsername.equalsIgnoreCase("firefox")) {
 
-        }*/
+            driver = new FirefoxDriver();
+
+        }
+
 
         driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
-            return driver;
+        driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
+        return driver;
+
 
     }
 

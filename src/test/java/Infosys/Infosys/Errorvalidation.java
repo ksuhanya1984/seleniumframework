@@ -22,18 +22,18 @@ public class Errorvalidation extends BaseTest {
 
     }
     @Test
-    public void productcatlogerrorvalidation(){
+    public void productcatlogerrorvalidation() throws InterruptedException {
 
-        String prodectname="IPHONE 13 PRO";
-        String prodectname1="Banarsi Saree";
+        String prodectname="ZARA COAT 3";
+        String prodectname1="IPHONE 13 PRO";
         //Landingpage Landingpage=lanchingapp();
         prodectcatlog prodectcatlog=Landingpage.loginApplication("sugi20@mail.com","Testing15");
         List<WebElement> prodect=prodectcatlog.getprodrctlist();
         prodectcatlog.getingproductbyname(prodectname);
         prodectcatlog.addproducttoc(prodectname);
         Cartpage Cartpage =prodectcatlog.checkingcartsection();
-        boolean ni =Cartpage. checkingproductavilability("IPHONE 1 PRO");
-        Assert.assertFalse(ni);
+        boolean ni =Cartpage. checkingproductavilability("ZARA COAT 3");
+        Assert.assertTrue(ni);
 
     }
 

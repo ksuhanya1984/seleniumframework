@@ -41,11 +41,12 @@ public class prodectcatlog extends AbstractCompount {
         //try equals or equalsIgnorcase
         WebElement prod=getprodrctlist().stream().filter(pt->pt.findElement(By.cssSelector("h5 b"))
                 .getText().equalsIgnoreCase(prodectname)).findFirst().orElse(null);
+        System.out.println(prod);
         return prod;
 
 
     }
-    public void  addproducttoc(String prodectname ){
+    public void  addproducttoc(String prodectname ) throws InterruptedException {
         WebElement prod= getingproductbyname(prodectname);
         //System.out.println(prod);
        // waituntilelementapper(toastmessage);

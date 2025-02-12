@@ -37,9 +37,10 @@ public class AbstractCompount {
         wait.until(ExpectedConditions.visibilityOfElementLocated(findBy));
         //List<WebElement> prodect = driver.findElements(By.cssSelector(".mb-3"));
     }
-    public void waitelementodissappear(WebElement ele){
-        WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(05));
-        wait.until(ExpectedConditions.invisibilityOf(ele));
+    public void waitelementodissappear(WebElement ele) throws InterruptedException {
+        Thread.sleep(1000);
+        //WebDriverWait wait =new WebDriverWait(driver, Duration.ofSeconds(05));
+        //wait.until(ExpectedConditions.invisibilityOf(ele));
 
     }
     public  void waitelementtoappear(WebElement findby){
@@ -48,10 +49,10 @@ public class AbstractCompount {
 
     }
 
-    public Cartpage checkingcartsection(){
+    public Cartpage checkingcartsection() throws InterruptedException {
         //driver.findElement(By.cssSelector("li button[routerlink*='/dashboard/cart']")).click();
         //waituntilelementapper(toastmessage);
-        waitelementodissappear(spinner);
+        //waitelementodissappear(spinner);
         cart.click();
         Cartpage Cartpage=new Cartpage(driver);
         return Cartpage;

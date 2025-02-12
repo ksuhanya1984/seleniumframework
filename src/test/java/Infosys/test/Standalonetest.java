@@ -19,7 +19,11 @@ public class Standalonetest extends BaseTest {
     public String prodectname ="IPHONE 13 PRO";
     //String prodectname1="qwerty";
     ///Users/kumarvaduganathan/Documents/WorkspaceSuhanya/seleniumframework
+    ///Users/kumarvaduganathan/Documents/WorkspaceSuhanya
     //http://localhost:8080/user/admin/
+    //4afefb76ad664865a4d93d96de8055db -admin password for jenkins
+    //21.0.3
+
 
 
     @Test(dataProvider = "getData",groups = {"purchase"})
