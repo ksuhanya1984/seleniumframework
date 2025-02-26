@@ -23,6 +23,9 @@ public class Standalonetest extends BaseTest {
     //http://localhost:8080/user/admin/
     //4afefb76ad664865a4d93d96de8055db -admin password for jenkins
     //21.0.3
+    //purchase-getdata
+    //https://www.qwikresume.com/resume-samples/selenium-automation-engineer/ to build the resume
+
 
 
 

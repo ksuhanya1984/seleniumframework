@@ -1,6 +1,7 @@
 package Infosys.Infosys;
 
-import Infosys.Testcompunts.BaseTest2;
+import Testcompounts.BaseTest2;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -1,6 +1,7 @@
 package Infosys.test;
 
-import Infosys.Testcompunts.BaseTest2;
+import Testcompounts.BaseTest2;
+
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;

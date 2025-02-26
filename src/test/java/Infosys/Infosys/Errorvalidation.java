@@ -12,13 +12,16 @@ import java.io.IOException;
 import java.util.List;
 
 public class Errorvalidation extends BaseTest {
+
+
+
     @Test(groups = {"Errorhandling"},retryAnalyzer= Retry.class)
     public  void loginerrorvalidation () throws IOException {
         Landingpage.loginApplication("suhanya22@mail.com","Tesing15");
         //flyInOut
         //Incorrect email id and password
         //Assert.assertEquals("Incorrect email or password",Landingpage.getmetheerrormessage());
-        Assert.assertEquals("Incorrect email or password.",Landingpage.getmetheerrormessage());
+        Assert.assertEquals("Incorrect email  password.",Landingpage.getmetheerrormessage());
 
     }
     @Test
